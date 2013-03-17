@@ -5,5 +5,5 @@ cat << EOF
 addons:
 config_vars:
 default_process_types:
-  web: env GEM_HOME=./.gems ./.gems/bin/stasis -d \$PORT
+  web: env GEM_HOME=./.gems ./.gems/bin/stasis -o *.haml -d \$PORT
 EOF

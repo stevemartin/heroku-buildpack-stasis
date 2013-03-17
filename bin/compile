@@ -16,9 +16,9 @@ EOF
 
 /usr/local/bin/gem install stasis haml albino coffee-script nokogiri rocco maruku RedCloth radius builder erubis sass liquid rdiscount bluecloth kramdown markaby creole wikicloth yajl-ruby --no-rdoc --no-ri | indent
 
-# Run Jekyll
+# Run Statis
 echo "Running Stasis" | indent
 export GEM_HOME=$1/.gems
 export PATH=$1/.gems/bin:$PATH
 cd $1
-$1/.gems/bin/stasis | indent
+$1/.gems/bin/stasis -o *.haml | indent
